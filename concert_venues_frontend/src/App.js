@@ -36,8 +36,11 @@ function App() {
         <label> Name
         <input type="text" value={name} onChange={(e) => setName(e.target.value)} />
         </label>
+        <label>
+          Price
+     
         <input type="number" value={price} onChange={(e) => setPrice(e.target.value)} />
-
+        </label>
         <select value={show} onChange={(e) => setShow(e.target.value)} >
           <option >Select Show</option>
             {shows.map(show => <option key={show.id} value={show.id}>{show.artist}</option>)}
